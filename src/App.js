@@ -1,6 +1,6 @@
 //import logo from './logo.png';
 import React from 'react';
-import { Tree } from 'react-tree-graph'
+//import { Tree } from 'react-tree-graph'
 import ReactDOM from 'react-dom';
 import './App.css';
 
