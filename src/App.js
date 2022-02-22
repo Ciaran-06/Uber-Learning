@@ -81,7 +81,7 @@ class Menu extends React.Component {
 class MenuHidden extends React.Component {
   constructor(props) {
     super(props);
-    //this.state = {date: new Date(), name: "react"};
+    this.state = {date: new Date(), name: "react"};
   }
 
   render() {
@@ -98,7 +98,7 @@ class MenuHidden extends React.Component {
 class Level extends React.Component {
   constructor(props) {
     super(props);
-    //this.state = {date: new Date(), name: "react"};
+    this.state = {date: new Date(), name: "react"};
   }
 
   render() {
