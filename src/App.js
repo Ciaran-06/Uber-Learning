@@ -1,6 +1,6 @@
 //import logo from './logo.png';
 import React from 'react';
-//import { Link, Route } from 'react-router-dom';
+import { Tree } from 'react-tree-graph'
 import ReactDOM from 'react-dom';
 import './App.css';
 
@@ -109,8 +109,27 @@ class Level extends React.Component {
   }
 
   render() {
-     return (<h1>Hello World</h1>)
+    const data = {
+      name: 'Parent',
+      children: [{
+          name: 'Child 1',
+      }, {
+          name: 'Child 2',
+      }]
+    };
+          
+    return (
+      <div className="App-Level">
+        <div className="typewriter">
+        <h1>Click To Start</h1>
+        </div>
+      </div>
+    );
   }
+}
+
+function reRender() {
+  ReactDOM.render(<App />, document.getElementById('root'));
 }
 
 export default App;
