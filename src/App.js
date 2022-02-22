@@ -11,13 +11,14 @@ function count() {
   ReactDOM.render(<App />, document.getElementById('root'));
 }
 
+
 function App() {
   if (toggleMen % 2 === 0) {
-    return (<div className="App"><Menu></Menu></div>);
+    return (<div className="App"><Menu></Menu><Level></Level></div>);
   }
   else 
   {
-    return (<div className="App"><MenuHidden></MenuHidden></div>);
+    return (<div className="App"><MenuHidden></MenuHidden><Level></Level></div>);
   }
   
 }
@@ -44,7 +45,7 @@ class Menu extends React.Component {
 
           <div className="Ui-Menu-Options">
             <div className="Ui-Menu-Choice" id="Ui-Menu-Choice-Top">
-              <p><a href="https://google.com">Github</a></p>
+              <p><a>Github</a></p>
             </div>
             <div className="Ui-Menu-Choice">
               <p>Linkdin</p>
@@ -59,6 +60,7 @@ class Menu extends React.Component {
           <p id="credit">by Ciaran Gaffney</p>
           </div>
         </div>
+
      ); 
 }
 
@@ -79,7 +81,7 @@ class Menu extends React.Component {
 class MenuHidden extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {date: new Date(), name: "react"};
+    //this.state = {date: new Date(), name: "react"};
   }
 
   render() {
@@ -91,6 +93,17 @@ class MenuHidden extends React.Component {
       <div className="bar3"></div>
     </div>
     ); }
+}
+
+class Level extends React.Component {
+  constructor(props) {
+    super(props);
+    //this.state = {date: new Date(), name: "react"};
+  }
+
+  render() {
+     return (<h1>Hello World</h1>)
+  }
 }
 
 export default App;
