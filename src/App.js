@@ -109,14 +109,14 @@ class Level extends React.Component {
   }
 
   render() {
-    const data = {
+   /* const data = {
       name: 'Parent',
       children: [{
           name: 'Child 1',
       }, {
           name: 'Child 2',
       }]
-    };
+    };*/
           
     return (
       <div className="App-Level">
@@ -128,8 +128,8 @@ class Level extends React.Component {
   }
 }
 
-function reRender() {
+/*function reRender() {
   ReactDOM.render(<App />, document.getElementById('root'));
-}
+}*/
 
 export default App;
