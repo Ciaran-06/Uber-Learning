@@ -28,11 +28,6 @@
   width: 100%;
 }
 
-#Head-Text {
-  width: auto;
-  font-size: 2vw;
-}
-
 .Ui-Menu {
   display: flex;
   flex-direction: column;
@@ -46,4 +41,23 @@
   background-color: #61dafb;
   margin: 0.5vh 0;
   transition: 0.4s;
+}
+
+.Ui-Clock {
+  display:flex; 
+  flex-direction:column; 
+  flex:1;
+}
+
+#Head-Text {
+  width: auto;
+  font-size: 2vw;
+}
+
+#clock {
+  font-size: 1.5vw;
+  display: flex;
+  align-self: center;
+  color:#61dafb;
+  margin-top: auto;
 }
