@@ -45,20 +45,20 @@ class Menu extends React.Component {
           </div>
 
           <div className="Ui-Menu-Options">
+            <a href="https://github.com/Ciaran-06">
             <div className="Ui-Menu-Choice" id="Ui-Menu-Choice-Top">
-              <span className="div-click">
               <p className="Ui-Menu-Choice-Text">Github</p>
-              </span>
             </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ciaran-gaffney-581167205/">
             <div className="Ui-Menu-Choice">
-            <span className="div-click">
                 <p className="Ui-Menu-Choice-Text">Linkdin</p>
-              </span>
             </div>
+            </a>
+
             <div className="Ui-Menu-Choice">
-              <span className="div-click">
                 <p className="Ui-Menu-Choice-Text">Load Level</p>
-              </span>
             </div>
           </div>
 
