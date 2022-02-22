@@ -30,7 +30,7 @@ class Menu extends React.Component {
 
 
   render() {
-    const {showhide} = this.props;
+    //const {showhide} = this.props;
     return (
       <div className="App-Options">
         <div className="Ui-Head">
