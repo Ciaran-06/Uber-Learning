@@ -1,5 +1,6 @@
 //import logo from './logo.png';
 import React from 'react';
+import { Link, Route } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './App.css';
 
@@ -45,14 +46,20 @@ class Menu extends React.Component {
 
           <div className="Ui-Menu-Options">
             <div className="Ui-Menu-Choice" id="Ui-Menu-Choice-Top">
-              <p>Github</p>
+              <span className="div-click">
+              <p className="Ui-Menu-Choice-Text">Github</p>
+              </span>
             </div>
             <div className="Ui-Menu-Choice">
-              <p>Linkdin</p>
+            <span className="div-click">
+                <p className="Ui-Menu-Choice-Text">Linkdin</p>
+              </span>
             </div>
             <div className="Ui-Menu-Choice">
-              <p>Load Level</p>
-              </div>
+              <span className="div-click">
+                <p className="Ui-Menu-Choice-Text">Load Level</p>
+              </span>
+            </div>
           </div>
 
           <div className="Ui-Clock">
