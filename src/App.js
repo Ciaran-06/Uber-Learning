@@ -12,7 +12,7 @@ function count() {
 }
 
 function App() {
-  if (toggleMen % 2 == 0) {
+  if (toggleMen % 2 === 0) {
     return (<div className="App"><Menu></Menu></div>);
   }
   else 
