@@ -7,7 +7,7 @@ let toggleMen = 0;
 
 function count() {
   toggleMen++;
-  console.log(toggleMen);
+  //console.log(toggleMen); debug line
   ReactDOM.render(<App />, document.getElementById('root'));
 }
 
@@ -44,7 +44,7 @@ class Menu extends React.Component {
 
           <div className="Ui-Menu-Options">
             <div className="Ui-Menu-Choice" id="Ui-Menu-Choice-Top">
-              <p>Github</p>
+              <p><a href="https://google.com">Github</a></p>
             </div>
             <div className="Ui-Menu-Choice">
               <p>Linkdin</p>
