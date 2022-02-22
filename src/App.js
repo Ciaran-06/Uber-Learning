@@ -45,7 +45,7 @@ class Menu extends React.Component {
 
           <div className="Ui-Menu-Options">
             <div className="Ui-Menu-Choice" id="Ui-Menu-Choice-Top">
-              <p><a>Github</a></p>
+              <p>Github</p>
             </div>
             <div className="Ui-Menu-Choice">
               <p>Linkdin</p>
