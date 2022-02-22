@@ -1,6 +1,5 @@
 //import logo from './logo.png';
-import ReactDOM from 'react-dom';
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 
 function App() {
@@ -28,7 +27,7 @@ class Menu extends React.Component {
             <div className="bar3"></div>
             </div>
           </div>
-          
+
           <div className="Ui-Clock">
           <p id="clock">{this.state.date.toLocaleTimeString()}</p>
           </div>
@@ -50,10 +49,4 @@ class Menu extends React.Component {
   }
 }
 
-function tick() {
-  ReactDOM.render(
-    <Menu />,
-    document.getElementById('root')
-  );
-}
 export default App;
