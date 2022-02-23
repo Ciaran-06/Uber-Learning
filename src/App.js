@@ -25,7 +25,7 @@ function App() {
     return (
       <div className="App">
         <MenuHidden></MenuHidden>
-        <Level></Level>
+        <Tree></Tree>
       </div>);
   }
   
@@ -130,6 +130,37 @@ class Level extends React.Component {
         </span>
       </div>
       );
+  }
+}
+
+class Tree extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {date: new Date(), name: "react"};
+  }
+
+  render() {
+    return (
+      <div className="Tree-Wrapper">
+        <Node></Node>
+      </div>
+    );
+  }
+}
+class Node extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "react"};
+  }
+
+  render() {
+    return (
+      <div className="Node-Wrapper">
+        <div className="Node-Text">
+        <p>{this.props.name}</p>
+        </div>
+      </div>
+    );
   }
 }
 

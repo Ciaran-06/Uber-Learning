@@ -132,6 +132,23 @@ a {
   background: none;
 }
 
+
+.Node-Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5vw;
+  height: 10vh;
+  background: rgb(233, 93, 0);
+  border: 0.2vw solid #61dafb;
+  border-radius: 50%
+}
+
+.Node-Text {
+  color: #61dafb;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
