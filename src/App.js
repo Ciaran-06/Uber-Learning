@@ -94,10 +94,13 @@ class MenuHidden extends React.Component {
   render() {
 
     return (
-    <div className="Ui-Menu" id="hidden" onClick={count}>
-      <div className="bar1"></div>
-      <div className="bar2"></div>
-      <div className="bar3"></div>
+    <div className="Hidden-Menu-Wrapper">
+      <p id="ver-text">v1.0.0</p>
+      <div className="Ui-Menu" id="hidden" onClick={count}>
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
+      </div>
     </div>
     ); }
 }

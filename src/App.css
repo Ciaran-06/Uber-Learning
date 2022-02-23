@@ -80,6 +80,19 @@ a {
   color: #61dafb;
 }
 
+.Hidden-Menu-Wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 8vh;
+  width: 10vw;
+  gap: 1vw;
+  background-color: #202227;
+  border-radius: 0% 6% 6% 0%;
+  box-shadow: 0 0 0 1px 202227;
+}
+
 .App-Level {
   display: flex;
   flex-direction: column;
@@ -145,8 +158,8 @@ a {
   border-top: 0.3vh solid #61dafb;
 }
 
-#hidden {
-  padding-left: 0.5vw;
-  padding-right: 1.0vw;
-  padding-bottom: 1.0vh;
+#ver-text {
+  padding-left: 1vw;
+  color: white;
+  font-size: 1.4vw;
 }
