@@ -90,21 +90,23 @@ a {
   gap: 1vw;
   background-color: #202227;
   border-radius: 0% 6% 6% 0%;
-  box-shadow: 0 0 0 1px 202227;
 }
 
 .App-Level {
   display: flex;
+  z-index: -2;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 80vw;
   background-color: #282c34;
   border-radius: 6% 0% 0% 6%;
   box-shadow: 0 0 0 1px 202227;
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
+}
+
+.typewriter {
+  padding-right: 5vw;
 }
 
 .typewriter h1 {
@@ -118,6 +120,16 @@ a {
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
+}
+
+.typewriter h1::selection {
+  color: none;
+  background: none;
+}
+/* For Mozilla Firefox */
+.typewriter h1::-moz-selection {
+  color: none;
+  background: none;
 }
 
 /* The typing effect */
@@ -154,14 +166,14 @@ a {
   margin-top: 0vh;
 }
 
-#Ui-Menu-Choice-Top {
-  border-top: 0.3vh solid #61dafb;
-}
-
-#ver-text {
+ #ver-text {
   padding-left: 1vw;
   color: white;
   font-size: 1.4vw;
+}
+
+#Ui-Menu-Choice-Top {
+  border-top: 0.3vh solid #61dafb;
 }
 
 #tfbug {
@@ -169,3 +181,5 @@ a {
   flex-direction:column; 
   flex:1;
 }
+
+

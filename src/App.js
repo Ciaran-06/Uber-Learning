@@ -15,11 +15,18 @@ function count() {
 
 function App() {
   if (toggleMen % 2 === 0) {
-    return (<div className="App"><Menu></Menu><Level></Level></div>);
+    return (<div className="App">
+        <Menu></Menu>
+        <Level></Level>
+      </div>);
   }
   else 
   {
-    return (<div className="App"><MenuHidden></MenuHidden><Level></Level></div>);
+    return (
+      <div className="App">
+        <MenuHidden></MenuHidden>
+        <Level></Level>
+      </div>);
   }
   
 }
@@ -94,14 +101,14 @@ class MenuHidden extends React.Component {
   render() {
 
     return (
-    <div className="Hidden-Menu-Wrapper">
-      <p id="ver-text">v1.0.0</p>
-      <div className="Ui-Menu" id="hidden" onClick={count}>
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
+      <div className="Hidden-Menu-Wrapper">
+        <p id="ver-text">v1.0.0</p>
+        <div className="Ui-Menu" id="hidden" onClick={count} >
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
       </div>
-    </div>
     ); }
 }
 
@@ -111,23 +118,18 @@ class Level extends React.Component {
     this.state = {date: new Date(), name: "react"};
   }
 
-  render() {
-   /* const data = {
-      name: 'Parent',
-      children: [{
-          name: 'Child 1',
-      }, {
-          name: 'Child 2',
-      }]
-    };*/
-          
+  render() {    
     return (
-      <div className="App-Level">
-        <div className="typewriter">
-        <h1>Click To Start</h1>
+      <div className="Hidden-General-Wrapper">
+        <span>
+        <div className="App-Level">
+          <div className="typewriter">
+          <h1>Click To Start</h1>
+          </div>
         </div>
+        </span>
       </div>
-    );
+      );
   }
 }
 
