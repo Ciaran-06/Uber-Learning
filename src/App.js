@@ -1,6 +1,7 @@
 //import logo from './logo.png';
 import React from 'react';
-//import { Tree } from 'react-tree-graph'
+import * as game from './game.js';
+//mport { Tree } from 'react-tree-graph'
 import ReactDOM from 'react-dom';
 import './App.css';
 
@@ -25,7 +26,7 @@ function App() {
     return (
       <div className="App">
         <MenuHidden></MenuHidden>
-        <Tree></Tree>
+        <Level></Level>
       </div>);
   }
   
@@ -121,6 +122,7 @@ class Level extends React.Component {
   render() {    
     return (
       <div className="Hidden-General-Wrapper">
+        <game.Test></game.Test>
         <span>
         <div className="App-Level">
           <div className="typewriter">
@@ -130,37 +132,6 @@ class Level extends React.Component {
         </span>
       </div>
       );
-  }
-}
-
-class Tree extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {date: new Date(), name: "react"};
-  }
-
-  render() {
-    return (
-      <div className="Tree-Wrapper">
-        <Node></Node>
-      </div>
-    );
-  }
-}
-class Node extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { name: "react"};
-  }
-
-  render() {
-    return (
-      <div className="Node-Wrapper">
-        <div className="Node-Text">
-        <p>{this.props.name}</p>
-        </div>
-      </div>
-    );
   }
 }
 
