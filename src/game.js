@@ -10,7 +10,7 @@ export class Test extends React.Component {
     }
     
     render() {
-        const { showhide } = this.state;
+        //const { showhide } = this.state;
         return (<h1>Hello World</h1> );
     }
 }
